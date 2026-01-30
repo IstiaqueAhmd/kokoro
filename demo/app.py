@@ -179,4 +179,4 @@ with gr.Blocks() as app:
     predict_btn.click(fn=predict, inputs=[text, voice, speed], outputs=[out_audio])
 
 if __name__ == '__main__':
-    app.queue(api_open=API_OPEN).launch(server_name="0.0.0.0", server_port=40001, show_api=API_OPEN)
+    app.queue(api_open=API_OPEN).launch(server_name="0.0.0.0", server_port=40001)
